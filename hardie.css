@@ -42,10 +42,26 @@ nav ul {
     list-style-type: none;
     padding: 0;
 }
+em{
+    font-weight: bold;
+}
 
 nav ul li {
     display: inline-block;
     margin-right: 10px;
+}
+
+/* Styles pour l'image agrandie */
+.gallery img.enlarged {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Ajuster l'échelle à 0.9 pour remplir presque entièrement l'écran */
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 9999;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Ajouter une transition fluide */
 }
 
 
@@ -185,12 +201,15 @@ footer {
 .contact-form textarea {
     background-color: #f2f2f2;
     color: #333;
+    height: 60px;
     border: none;
 }
 
 .contact-form input[type="submit"] {
     background-color: #ef2929;
+    height: 60px;
     color: #fff;
+    margin: auto;
     cursor: pointer;
 }
 
