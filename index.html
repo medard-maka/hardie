@@ -9,13 +9,13 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="horizontal-list">
                 <li><a href="#gallery"></i> Galerie</a></li>
                 <li><a href="#about"></i> À propos</a></li>
                 <li><a href="#contact"></i> Contact</a></li>
             </ul>
         </nav>
-        <h1>Hardie <span style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: red;">décoration</span> </h1>
+        <h1>Hardie /<span style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: red;">decoration</span> </h1>
         <img src="photos\A.jpg" alt="Logo" width="200" height="200">
         <h5>Dans le noir il y a la création</h5>
     </header>
@@ -51,27 +51,38 @@
 
         <section id="about">
             <h2>À propos de l'artiste</h2>
-            <p>L'artiste mystérieuse, dont les créations captivent les regards et éveillent les émotions, nous emporte dans un monde où les couleurs dansent et où l'imagination est reine. Chaque toile est un voyage visuel, une invitation à explorer des paysages abstraits qui semblent prendre vie sous nos yeux émerveillés.
-
+            <p class="about-paragraph">
+                <strong>L'artiste mystérieuse</strong>, dont les créations captivent les regards et éveillent les émotions, nous emporte dans un monde où les couleurs dansent et où l'imagination est reine. Chaque toile est un voyage visuel, une invitation à explorer des paysages abstraits qui semblent prendre vie sous nos yeux émerveillés.
+            </p>
+            <p class="about-paragraph">
                 Avec une maîtrise technique hors pair et une sensibilité artistique inégalée, cette artiste transcende les limites de la réalité pour nous plonger dans un univers onirique. Ses coups de pinceau délicats créent des textures subtiles et des jeux de lumière qui confèrent une profondeur unique à ses œuvres.
-                
-                À travers sa palette de couleurs audacieuse et harmonieuse, elle exprime une gamme infinie d'émotions. Chaque tableau raconte une histoire, une histoire que le spectateur est invité à interpréter à sa manière, à ressentir et à laisser émerger ses propres réflexions.
-                
+            </p>
+            <p class="about-paragraph">
+                <strong><em>À travers sa palette de couleurs audacieuse et harmonieuse, elle exprime une gamme infinie d'émotions. Chaque tableau raconte une histoire, une histoire que le spectateur est invité à interpréter à sa manière, à ressentir et à laisser émerger ses propres réflexions.</em></strong>
+            </p>
+            <p class="about-paragraph">
                 L'artiste, en véritable alchimiste, est capable de transformer des pigments en émotions palpables. Ses toiles sont une fenêtre ouverte sur son monde intérieur, où elle explore les nuances de la beauté et de la complexité de la vie. Chaque création est un témoignage de son talent inné et de sa passion débordante pour l'art.
-                
-                Que ce soit à travers des paysages abstraits, des portraits envoûtants ou des compositions contemporaines, cette artiste nous rappelle l'importance de l'expression artistique et de la créativité dans nos vies. Ses œuvres continueront à inspirer et à émerveiller les générations futures, laissant une empreinte indélébile dans le monde de l'art.
-                
-                En conclusion, cette artiste talentueuse nous invite à plonger dans son univers visuel, à explorer ses créations fascinantes et à nous laisser transporter par la magie de son art. Un véritable trésor artistique qui ne cesse de nous émerveiller et de nous inspirer.</p>
+            </p>
+            <p class="about-paragraph">
+                Que ce soit à travers des paysages abstraits, des portraits envoûtants ou des compositions contemporaines, <em>cette artiste nous rappelle l'importance de l'expression artistique et de la créativité dans nos vies. Ses œuvres continueront à inspirer et à émerveiller les générations futures, laissant une empreinte indélébile dans le monde de l'art.</em>
+            </p>
+            <p class="about-paragraph">
+                En conclusion, cette artiste talentueuse nous invite à plonger dans son univers visuel, à explorer ses créations fascinantes et à nous laisser transporter par la magie de son art. Un véritable trésor artistique qui ne cesse de nous émerveiller et de nous inspirer.
+            </p>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <form class="contact-form">
+            <form action="https://api.whatsapp.com/send" method="GET" class="contact-form">
+                <input type="hidden" name="phone" value="+243979393632">
                 <input type="text" name="name" placeholder="Votre nom">
                 <input type="email" name="email" placeholder="Votre adresse e-mail">
+                <input type="hidden" name="text" value="Bonjour Art-Déco">
                 <textarea name="message" placeholder="Votre message"></textarea>
-                <input type="submit" value="Envoyer">
+
+                <input type="submit" value="Envoyer un message sur WhatsApp">
             </form>
+        
         </section>
     </main>
 
